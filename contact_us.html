@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="footer2.css">
+    <script src="https://kit.fontawesome.com/26b7cacf1a.js" crossorigin="anonymous"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="item-left">
+             <a href="eventList.html" class="nav-style">Events</a>
+             <a href="priceList2.html" class="nav-style">Packages</a>
+        </div>
+        <div class="item-left">
+            <a href="about_us.html" class="nav-style">About</a>
+            <a href="contact_us.html" class="nav-style">Contact</a>
+            <div class="navigation-bar">
+                <button class="hamburger-menu" onclick="show()">
+                    <div id="line1" class="line"></div>
+                    <div id="line2" class="line"></div>
+                    <div id="line3" class="line"></div>
+                </button>
+        
+                <nav>
+                    <div class="menu-hamburger">
+                        <a href="">Home</a>
+                        <a href="">About</a>
+                        <a href="">Packages</a>
+                        <a href="">Events</a>
+                        <a href="">Contact</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <section class="homepage" id="homepage">
+                <div class="homepage-text">
+                    <h1>Contact Us</h1>
+                    <p class="texts-reveal">
+                        <span class="text-enter">Premier venue for business meetings</span>
+                        <span>Experience elegance and sophistication</span>
+                        <span>Provides a convenient and accessible setting</span>
+                        <span>A world of luxury and comfort</span>
+                    </p>
+                    <button class="about-us-btn">About Us</button>
+                </div>
+        </section>
+
+
+    <section>
+        <div class="contact">
+            <div class="contact-container">
+                    <div class="form-wrapper">
+                        <div class="contact-heading">
+                            <h1>Tell Your Problem.</h1>
+                            <p class="contact-text">Or reach us via: <a href="mailto:jcc@gmail.com">jcc@gmail.com</a></p>
+                        </div>
+        
+                        <form action="index.html" method="post" class="contact-form" id="form-register">
+                            <div class="input-wrap">
+                                <input class="contact-input" onkeyup="validateName()" autocomplete="off" name="First Name" type="text" id="username" required>
+                                <label>First Name</label>
+                                <span id="err-name"></span>
+                            </div>
+                            <div class="input-wrap">
+                                <input class="contact-input" autocomplete="off" name="First Name" type="text" id="username2" required>
+                                <label>Last Name</label>
+                            </div>
+                            <div class="input-wrap">
+                                <input class="contact-input" onkeyup="validatePhone()" autocomplete="off" name="First Name" type="text" id="phone" required>
+                                <label>Phone Number</label>
+                                <span id="err-phone"></span>
+                            </div>
+                            <div class="input-wrap">
+                                <input class="contact-input" onkeyup="validateEmail()" autocomplete="off" name="First Name" type="text" id="usermail" required>
+                                <label>Email</label>
+                                <span id="err-email"></span>
+                            </div>
+                            <div class="input-wrap textarea w-100">
+                                <textarea  onkeyup="validateMessage()" name="Message" auto-complete="off" class="contact-input" id="message" required></textarea>
+                                <label>Message</label>
+                                <span id="err-message"></span>
+                            </div>
+
+                            <div onkeyup="validateCheckbox()" required>
+                                <input class="contact-input" autocomplete="off" type="checkbox" id="phonecontact">Phone
+                                <input type="checkbox" autocomplete="off" id="email">Email
+                                <span id="err-checkbox"></span>
+                            </div>
+        
+                            <div class="contact-button w-100">
+                                <button class="btn">
+                                    <div class="add-attachment">
+                                    <span>
+                                        <i>Add attachment</i>
+                                    </span>
+                                    <input type="file" name="attachment">
+                                </div>
+                                </button>
+                                <button onclick="return validateForm()" type="submit" id="register-button" class="btn submit">Register</button>
+                                <span id="err-submit"></span>
+                                <!-- <input type="submit" value="Send Message" class="btn" > -->
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-left">
+        <div class="footer-left-flex">
+            <img src="Asset/jockey.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatum et in minima iure ad provident perspiciatis velit? Similique voluptate quibusdam illum harum ipsum fuga quas odio architecto asperiores nemo.</p>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+    </div>
+    <ul class="footer-right">
+        <li class="feature">
+            <h2>Quick Links</h2>
+
+            <ul class="quicklink">
+                <li><a href="about_us.html">About</a></li>
+                <li><a href="priceList2.html">Packages</a></li>
+                <li><a href="eventList.html">Events</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+            </ul>
+        </li>
+
+        <li class="feature">
+            <h2>Address</h2>
+
+            <ul class="quicklink">
+                <li><a href="#">Jakarta Barat</a></li>
+                <li><a href="#">27A, Kecamatan BatuBara</a></li>
+                <li><a href="#">Indonesia</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="footer-bottom">
+        <p>All Right Reserved | Jockey Conference Center</p>
+    </div>
+</footer>
+</div>
+
+    <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+.about{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.about .main img{
+    width: 25vw;
+    height: auto;
+    padding: 0 10px;
+    border-radius: 30px;
+}
+
+.all-text{
+    width: 50vw;
+    margin-left: 2vw;
+    padding: 0 10px;
+}
+
+.main{
+    width: 90vw;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+
+.all-text h4{
+    font-size: 18px;
+    color: #777777;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.all-text h1{
+    font-size: 65px;
+    color: #111111;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 10vh
+}
+
+.all-text p{
+    font-size: 16px;
+    color: #111111;
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#btn-about-us{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-about-us button{
+    background: white;
+    padding: 20px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    border: 2px solid black;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6%);
+}
+
+.btn-about-us.one button{
+    background: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    border: 2px solid black;
+    border-radius: 50px;
+    outline: none;
+    box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6%);
+}
+
+.btn-about-us button:hover{
+    background-color: black;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn-about-us .btn2{
+    background: #111111;
+    color: white;
+}
+
+.btn-about-us.event{
+    z-index: 1;
+    /* margin-top: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; */
+}
+
+@media screen and (max-width: 1250px){
+    .about{
+        width: 100%;
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .all-text{
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main{
+        display: grid;
+    }
+    .about .main img{
+        width: 70vw;
+        height: auto;
+    }
+
+    .all-text h1{
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .about {
+        padding: 60px;
+    }
+
+    .about .main img {
+        width: 52vw;
+        height: 40vh;
+    }
+
+    .price-section {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        height: 128vh;
+    }
+
+    .price-container {
+        width: 56vw;
+        display: grid;
+    }
+}

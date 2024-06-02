@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="abotus.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="footer2.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <script src="main.js"></script>
+    <title>JCC</title>
+</head>
+<body>
+    <!-- navigation bar -->
+        <div class="navbar">
+            <div class="item-left">
+                 <a href="eventList.html" class="nav-style">Events</a>
+                 <a href="priceList2.html" class="nav-style">Packages</a>
+            </div>
+            <div class="item-left">
+                <a href="about_us.html" class="nav-style">About</a>
+                <a href="contact_us.html" class="nav-style">Contact</a>
+                <div class="navigation-bar">
+                    <button class="hamburger-menu" onclick="show()">
+                        <div id="line1" class="line"></div>
+                        <div id="line2" class="line"></div>
+                        <div id="line3" class="line"></div>
+                    </button>
+            
+                    <nav>
+                        <div class="menu-hamburger">
+                            <a href="">Home</a>
+                            <a href="">About</a>
+                            <a href="">Packages</a>
+                            <a href="">Events</a>
+                            <a href="">Contact</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    <!-- landing page -->
+    <div class="content">
+    <section class="homepage" id="homepage">
+            <div class="homepage-text">
+                <h1>Jockey Conference Center</h1>
+                <p class="slide-text">
+                    <span class="slide-text-words">Premier venue for business meetings</span>
+                    <span>Experience elegance and sophistication</span>
+                    <span>Provides a convenient and accessible setting</span>
+                    <span>A world of luxury and comfort</span>
+                </p>
+                <a href="about_us.html"><button class="about-us-btn">About Us</button></a>
+            </div>
+    </section>
+    
+    <!-- upcoming events -->
+    <section>
+        <div class="upcoming-events" id="upcoming-events">
+        <div class="heading">
+            <span>Upcoming Events</span>
+            <h1>Join Now</h1>
+        </div>
+        <br>
+        <br>
+        <div class="event-container">
+            <div class="event-container-box expand">
+                <div class="event-image">
+                    <img src="Asset/upcoming1.jpg" alt="poster-indonesia-comic-con">
+                </div>
+                <div class="event-date">
+                    <div class="event-date-left">
+                        <h3>10 June - 12 June 2023</h3>
+                        <h4>Auditorium Hall</h4>
+                    </div>
+                    <div class="event-date-right">
+                        <div class="btn-about-us one">
+                            <button type="button">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event-container-box expand">
+                <div class="event-image">
+                    <img src="Asset/upcoming2.jpg" alt="poster-indonesia-comic-con">
+                </div>
+                <div class="event-date">
+                    <div class="event-date-left">
+                        <h3>10 June - 12 June 2023</h3>
+                        <h4>Auditorium Hall</h4>
+                    </div>
+                    <div class="event-date-right">
+                        <div class="btn-about-us one">
+                            <button type="button">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- About Us -->
+    <section>
+        <div class="about">
+        <div class="main">
+            <div class="about-us-image">
+                <img src="Asset/confercenter.jpg" alt="">
+            </div>
+            <div class="all-text">
+                <h4>About Us</h4>
+                <h1>A Luxurious Conference Center</h1>
+                <p>At Jockey Conference Center, we pride ourselves on being a premier destination for conferences, seminars, and corporate events. With our prime location in the heart of the city, we offer state-of-the-art facilities and a dedicated team committed to ensuring the success of your event.</p>
+                <div class="btn-about-us" id="btn-about-us">
+                    <button type="button">Our Team</button>
+                    <button type="button">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="price-section">
+        <div class="heading price">
+            <span>Price List</span>
+            <h2>Many Events, Many Packages.</h2>
+        </div>
+        <div class="price-container">
+            <div class="image one active">
+                <h3>Wedding Packages</h3>
+            </div>
+            <div class="image two">
+                <h3>Birthday Packages</h3>
+            </div>
+            <div class="image three">
+                <h3>Meeting Packages</h3>
+            </div>
+            <div class="image four">
+                <h3>Social Packages</h3>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="heading-news">
+            <span>Latest News</span>
+        </div>
+        <div class="news-container">
+            <div class="news-box">
+                <section class="news-card">
+                    <div class="news-item">
+                        <img src="Asset/news2.jpg">
+                        <h3>Breaking News: Spectacular Concert Announcement!</h3>
+                        <div class="btn-about-us one">
+                            <button type="button">Read More</button>
+                        </div>
+                    </div>
+        
+                    <div class="news-item">
+                        <img src="Asset/news1.jpg">
+                        <h3>Star-Studded Wedding Extravaganza: Actor Ties the Knot at Prestigious Conference Center!</h3>
+                        <div class="btn-about-us one">
+                            <button type="button">Read More</button>
+                        </div>
+                    </div>
+        
+                    <div class="news-item">
+                        <img src="Asset/news1.jpg">
+                        <h3>Star-Studded Wedding Extravaganza: Actor Ties the Knot at Prestigious Conference Center!</h3>
+                        <div class="btn-about-us one">
+                            <button type="button">Read More</button>
+                        </div>
+                    </div>
+        
+                    <div class="news-item">
+                        <img src="Asset/news1.jpg">
+                        <h3>Star-Studded Wedding Extravaganza: Actor Ties the Knot at Prestigious Conference Center!</h3>
+                        <div class="btn-about-us one">
+                            <button type="button">Read More</button>
+                        </div>
+                    </div>
+        
+                    <div class="news-item">
+                        <img src="Asset/news1.jpg">
+                        <h3>Star-Studded Wedding Extravaganza: Actor Ties the Knot at Prestigious Conference Center!</h3>
+                        <div class="btn-about-us one">
+                            <button type="button">Read More</button>
+                        </div>
+                    </div>
+        
+                </section>
+        
+                <section class="pagination">
+                    <div class="bullet active" attr='0' onclick="switching(this)"></div>
+                    <div class="bullet" attr='1' onclick="switching(this)"></div>
+                    <div class="bullet" attr='2' onclick="switching(this)"></div>
+                    <div class="bullet" attr='3' onclick="switching(this)"></div>
+                    <div class="bullet" attr='4' onclick="switching(this)"></div>
+                </section>
+        
+            </div>
+        </div>
+    </section>
+
+      <footer class="footer">
+        <div class="footer-left">
+            <div class="footer-left-flex">
+                <img src="Asset/jockey.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatum et in minima iure ad provident perspiciatis velit? Similique voluptate quibusdam illum harum ipsum fuga quas odio architecto asperiores nemo.</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+        <ul class="footer-right">
+            <li class="feature">
+                <h2>Quick Links</h2>
+
+                <ul class="quicklink">
+                    <li><a href="about_us.html">About</a></li>
+                    <li><a href="priceList2.html">Packages</a></li>
+                    <li><a href="eventList.html">Events</a></li>
+                    <li><a href="contact_us.html">Contact</a></li>
+                </ul>
+            </li>
+
+            <li class="feature">
+                <h2>Address</h2>
+
+                <ul class="quicklink">
+                    <li><a href="#">Jakarta Barat</a></li>
+                    <li><a href="#">27A, Kecamatan BatuBara</a></li>
+                    <li><a href="#">Indonesia</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="footer-bottom">
+            <p>All Right Reserved | Jockey Conference Center</p>
+        </div>
+    </footer>
+
+    </div>
+
+
+    <!-- Javascript -->
+
+    <script type="text/javascript">
+	
+	let sliders = document.querySelectorAll('.news-item');
+
+	let bullets = document.querySelectorAll('.bullet');
+
+	var count = 0;
+
+	function switching(currentTest){
+		currentTest.classList.add('active');
+		var attribute = currentTest.getAttribute('attr');
+		if(attribute > count){
+			sliders[count].style.animation = 'right1 0.5s ease-in forwards';
+			count = attribute;
+			sliders[count].style.animation = 'right2 0.5s ease-in forwards';
+		}
+		else if(attribute == counter){
+            return;
+        }
+		else{
+			sliders[count].style.animation = 'left1 0.5s ease-in forwards';
+			count = attribute;
+			sliders[count].style.animation = 'left2 0.5s ease-in forwards';
+		}
+		pagination();
+	}
+
+	function pagination(){
+		for(i = 0; i < bullets.length; i++){
+			bullets[i].className = bullets[i].className.replace(' active', '');
+		}
+		bullets[count].className += ' active';
+	}
+
+	function slideNext(){
+		sliders[count].style.animation = 'right1 0.5s ease-in forwards';
+		if(count >= sliders.length - 1){
+			count = 0;
+		}
+		else{
+			count++;
+		}
+		sliders[count].style.animation = 'right2 0.5s ease-in forwards';
+		pagination();
+	}
+	function automatic(){
+		deleteInterval = setInterval(timer, 2000);
+		function timer(){
+			slideNext();
+			indicators();
+		}
+	}
+	automatic();
+    </script>
+
+<script>
+    const slideText = document.querySelector(".slide-text").children;
+    const textLength = slideText.length;
+    let idx = 0;
+
+    function changeText(){
+        for(let i = 0; i < textLength; i++){
+            slideText[i].classList.remove("slide-text-words");
+        }
+        slideText[idx].classList.add("slide-text-words");
+        if(idx == textLength-1){
+            idx = 0;
+        }
+        else{
+            idx++;
+        }
+
+        setTimeout(changeText, 3000);
+    }
+
+    window.onload = changeText
+</script>
+
+<script>
+    function show(){
+        document.querySelector('.hamburger-menu').classList.toggle('open')
+        document.querySelector('.navigation-bar').classList.toggle('active')
+    }
+</script>
+    
+</body>
+</html>

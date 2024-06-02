@@ -1,0 +1,286 @@
+/* About us page*/
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap');
+
+*{
+    font-family: 'Instrument Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+body {
+	overflow-x: hidden;
+    background: #ffffff;
+}
+
+.heading-gallery{
+    font-size: 3vh;
+    text-align: left;
+    line-height: 5vh;
+}
+
+.heading-gallery span {
+    font-size: 6vh;
+    font-weight: 600;
+    color: #000000;
+    margin-right: 20px;
+}
+
+.heading-gallery h1{
+    font-size: 4vh;
+    font-weight: 200;
+    color: #444444;
+}
+
+.horizontal-bar{
+    position: relative;
+    margin: 80px auto;
+    max-width: 80vw;
+}
+
+.horizontal-container{
+    padding: 10px 60px;
+    margin-bottom: 10vh;
+    position: relative;
+    width: 50%;
+    animation: layDown 1s linear forwards;
+}
+
+@keyframes layDown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.horizontal-container:nth-child(1){
+    animation-delay: 0s;
+}
+
+.horizontal-container:nth-child(2){
+    animation-delay: 2s;
+}
+
+.horizontal-container:nth-child(3){
+    animation-delay: 4s;
+}
+
+.horizontal-container:nth-child(4){
+    animation-delay: 6s;
+}
+
+.horizontal-container.left{
+    left: 0;
+}
+
+.horizontal-content{
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: rgba(17 17 17 / 15%) 0px 0.5rem 1rem;
+    border: none;
+    padding: 25px 30px;
+    position: relative;
+    font-size: 15px;
+}
+
+.horizontal-content h2{
+    font-size: 5vh;
+    font-weight: 800;
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #0a0a0a;
+}
+
+.horizontal-container.right{
+    left: 50%;
+}
+
+.horizontal-container img{
+    position: absolute;
+    width: 32vw;
+    height: 46vh;
+    left: 42.5vw;
+    top: 2vh;
+    z-index: 1;
+    border-radius: 6px;
+    transition: transform 0.5s ease;
+}
+
+.horizontal-container img:hover{
+    transform: scale(1.2);
+}
+
+.horizontal-container.right img{
+    position: absolute;
+    width: 33vw;
+    height: 49vh;
+    left: -36vw;
+    top: 2vh;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.horizontal-bar::after{
+    content: '';
+    width: 6px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    position: absolute;
+    background: gray;
+    animation: lineDown 6s linear forwards;
+}
+
+@keyframes lineDown{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+/* certificate */
+.certificate {
+    padding: 80px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .certificate:before,
+  .certificate:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 1;
+  }
+  
+  .certificate:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .certificate:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .certificate-slide {
+    display: inline-block;
+    animation: 20s goesTo infinite linear;
+  }
+  
+  .certificate-slide img {
+    height: 14vw;
+    width: 20vw;
+    margin: 0 20px;
+  }
+
+  @keyframes goesTo {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+/* media query for timeline */
+@media screen and (max-width: 768px){
+    .horizontal-bar{
+        margin: 50px auto;
+    }
+    .horizontal-bar::after{
+        display: none;
+    }
+    .horizontal-container{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    .horizontal-content small{
+        margin-bottom: 10px;
+    }
+    .horizontal-container.right{
+        right: 0;
+    }
+    .horizontal-container img {
+        width: 55vw;
+    }
+    .horizontal-container.left img, .horizontal-container.right img{
+        left: 10px;
+        z-index: 0;
+    }
+
+    .horizontal-content {
+        border-radius: 30px;
+        background: #fff;
+        box-shadow: rgba(17 17 17 / 15%) 0px 0.5rem 1rem;
+        border: none;
+        padding: 25px 30px;
+        position: relative;
+        top: 30vh;
+        font-size: 13px;
+    }
+
+    .horizontal-container.right {
+        top: 25vh;
+        left: 0;
+    }
+
+    .horizontal-container.right img {
+        width: 55vw;
+    }
+
+    .horizontal-container.left.test{
+        top: 50vh;
+    }
+
+    .horizontal-container.right.test {
+        top: 75vh;
+    }
+
+    .heading.about{
+        position: relative;
+        top: 85vh;
+    }
+
+    .heading.about.stories{
+        position: relative;
+        top: 5vh;
+    }
+
+    .certificate {
+        top: 90vh;
+    }
+
+    .price-container {
+        display: grid;
+        position: relative;
+        top: 180vh;
+        right: 14vw;
+    }
+
+    .heading-gallery{
+        text-align: center;
+        position: relative;
+        top: 40vh;
+        left: 30vw;
+    }
+
+    .image {
+        width: 50vw;
+    }
+}

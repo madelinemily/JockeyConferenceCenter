@@ -1,0 +1,330 @@
+.price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.price-container .price-card{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 25vw;
+  height: 50vh;
+  border-radius: 30px;
+  background: white;
+  box-shadow: rgba(17 17 17 / 15%) 0px 0.5rem 1rem;
+  transition: 0.5s;
+}
+
+.price-container .price-card:hover{
+  height: 75vh;
+}
+
+.price-container .price-card.special:hover{
+  height: 90vh;
+}
+
+.price-container .price-card .card-image{
+ position: absolute;
+ width: 20vw;
+ height: 40vh;
+ border-radius: 30px;
+ overflow: hidden;
+ transition: 0.5s;
+ top: 4vh;
+ left: 2vw;
+}
+
+.price-container .price-card:hover .card-image{
+  top: -140px;
+  scale: 0.75;
+}
+
+.price-container .price-card .card-image img{
+  position: absolute;
+  top: 7vh;
+  left: 10vh;
+  width: 60%;
+  height: 60%;
+  object-fit: cover;   
+}
+
+.card-content{
+  display: none;
+  text-align: center;
+  padding: 90px 20px 10px 20px;
+}
+
+.card-content h3{
+  font-size: 3vh;
+}
+
+.card-title{
+  color: black;
+  font-size: 2.5vh;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.card-text{
+  color: gray;
+  font-size: 2vh;
+  text-align: center;
+}
+
+.card-price{
+  font-weight: 600;
+  color: black;
+  font-size: 4vh;
+  text-align: center;
+}
+
+.card-padding{
+ padding: 20px;
+}
+
+.price-container .price-card:hover .card-content{
+  display: block;
+  transition: 0.3s;
+}
+
+.card.one{
+  height: 60vh;
+  width: 25vw;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background: url(Asset/package1.jpg) center no-repeat;
+  box-shadow: rgba(17 17 17 / 15%) 0px 0.5rem 1rem;
+  background-size: cover;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card.two{
+  height: 60vh;
+  width: 25vw;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background: url(Asset/package2.jpg) center no-repeat;
+  box-shadow: rgba(17 17 17 / 15%) 0px 0.5rem 1rem;
+  background-size: cover;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card.three{
+  height: 60vh;
+  width: 25vw;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background: url(Asset/package3.jpg) center no-repeat;
+  box-shadow: rgba(17 17 17 / 15%) 0px 0.5rem 1rem;
+  background-size: cover;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.heading-price2{
+  font-size: 3vh;
+  text-align: left;
+  line-height: 35px;
+  margin-top: 22vh;
+}
+
+.heading-price2 span{
+  font-size: 6vh;
+  font-weight: 600;
+}
+
+.heading-price2 h1{
+  font-size: 4vh;
+  font-weight: 200;
+}
+
+.card.four{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 80vw;
+  position: relative;
+  z-index: 1;
+  /* place-content: center; */
+  text-align: center;
+  background: url(Asset/conf1.jpg) center no-repeat;
+  box-shadow: rgba(17 17 17 / 15%) 0px 0.5rem 1rem;
+  background-size: cover;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  left: 5%;
+}
+
+.card.five{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 80vw;
+  position: relative;
+  z-index: 1;
+  /* place-content: center; */
+  text-align: center;
+  background: url(Asset/conf2.jpg) center no-repeat;
+  box-shadow: rgba(17 17 17 / 15%) 0px 0.5rem 1rem;
+  background-size: cover;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  left: 5%;
+}
+
+.card.six {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 80vw;
+  position: relative;
+  z-index: 1;
+  /* place-content: center; */
+  text-align: center;
+  background: url(Asset/catering.jpg) center no-repeat;
+  box-shadow: rgba(17 17 17 / 15%) 0px 0.5rem 1rem;
+  background-size: cover;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  left: 5%;
+}
+
+.card.seven {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 80vw;
+  position: relative;
+  z-index: 1;
+  /* place-content: center; */
+  text-align: center;
+  background: url(Asset/event.jpg) center no-repeat;
+  box-shadow: rgba(17 17 17 / 15%) 0px 0.5rem 1rem;
+  background-size: cover;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  left: 5%;
+}
+
+.border-type {
+  padding: 10px 10px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-size: 5vh;
+  margin-top: 6vh;
+  font-weight: 400;
+  text-align: center;
+  color: black;
+  position: relative;
+  top: -60vh;
+  text-align: center;
+  z-index: 1;
+  font-weight: 800;
+  color: #ffff;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 27%;
+}
+
+.card::before,
+.card::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: calc(60% + 35px);
+  background-color: #f5f5f5;
+  transition: transform 0.3s .25s;
+}
+
+.card::before{
+  top: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  transform: translateY(-100%);
+}
+
+.card::after{
+  bottom: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transform: translateY(100%);
+}
+
+.card__body{
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.card__title{
+  margin-bottom: 15px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.card__title h3 {
+  margin-top: 6vh;
+  font-size: 3vh;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 4vh;
+}
+
+.card__title ul{
+  font-size: 2.5vh;
+  font-weight: 400;
+  color: gray;
+  margin-bottom: 24px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.card__title button {
+  margin-top: 7vh;
+  margin-bottom: 3vh;
+  background: white;
+  padding: 20px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111111;
+  border: 2px solid black;
+  border-radius: 30px;
+  outline: none;
+  box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6%);
+}
+
+.card:hover:before,
+.card:hover:after{
+  transform: translateY(0);
+}
+
+.card:hover .card__body{
+  opacity: 1;
+  transition-delay: 0.75s;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eventList.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="abotus.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="footer2.css">
+    <title>Event List</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="item-left">
+             <a href="eventList.html" class="nav-style">Events</a>
+             <a href="priceList2.html" class="nav-style">Packages</a>
+        </div>
+        <div class="item-left">
+            <a href="about_us.html" class="nav-style">About</a>
+            <a href="contact_us.html" class="nav-style">Contact</a>
+            <div class="navigation-bar">
+                <button class="hamburger-menu" onclick="show()">
+                    <div id="line1" class="line"></div>
+                    <div id="line2" class="line"></div>
+                    <div id="line3" class="line"></div>
+                </button>
+        
+                <nav>
+                    <div class="menu-hamburger">
+                        <a href="">Home</a>
+                        <a href="">About</a>
+                        <a href="">Packages</a>
+                        <a href="">Events</a>
+                        <a href="">Contact</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <section class="homepage" id="homepage">
+                <div class="homepage-text">
+                    <h1>Event List</h1>
+                    <p class="slide-text">
+                        <span class="slide-text-words">See event that held before</span>
+                        <span>Amazing and unique</span>
+                    </p>
+                    <button class="about-us-btn">See Now</button>
+                </div>
+        </section>
+
+    <section>
+    
+
+    <div id="button-filter">
+        <button class="btn active" onclick="filtering('all')">Show All</button>
+        <button class="btn" onclick="filtering('wedding')">Wedding</button>
+        <button class="btn" onclick="filtering('birthday')">Birthday</button>
+        <button class="btn" onclick="filtering('artistic')">Artistic</button>
+        <button class="btn" onclick="filtering('tournament')">Tournament</button>
+    </div>
+
+    <div class="event-list-container">
+    <article class="event-card tournament">
+        <div class="img-box">
+            <img src="Asset/poster1.jpg" alt="" class="event-banner">
+        </div>
+
+        <div class="event-content">
+            <a href="">
+                <h3 class="event-title">Grand Finals Master League</h3>
+            </a>
+            <p class="event-text">
+                The "Grand Final Master League" is a highly anticipated event showcasing the ultimate showdown of skilled competitors vying for the championship title.
+            </p>
+
+            <div class="event-info">
+                <div class="event-content-footer">
+                    <div class="publish-date">
+                        16 April - 20 April 2023
+                    </div>
+                    <div class="btn-about-us event">
+                        <button type="button">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="event-card artistic">
+        <div class="img-box">
+            <img src="Asset/poster2.jpg" alt="" class="event-banner">
+        </div>
+
+        <div class="event-content">
+            <a href="">
+                <h3 class="event-title">Indonesia Fashion Week 2023</h3>
+            </a>
+            <p class="event-text">
+                The "Indonesia Fashion Week" is a captivating event that celebrates the vibrant and diverse world of Indonesian fashion. It showcases the creativity and craftsmanship of talented designers, highlighting traditional motifs and contemporary trends, all while mesmerizing the audience with stunning runway displays.
+            </p>
+
+            <div class="event-info">
+                <div class="event-content-footer">
+                    <div class="publish-date">
+                        22 February - 26 February 2023
+                    </div>
+                    <div class="btn-about-us event">
+                        <button type="button">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="event-card wedding">
+        <div class="img-box">
+            <img src="Asset/poster3.jpg" alt="" class="event-banner">
+        </div>
+
+        <div class="event-content">
+            <a href="">
+                <h3 class="event-title">Wedding Celebration Festival</h3>
+            </a>
+            <p class="event-text">
+                The wedding of Lisa and Anthony is a magical and romantic celebration that symbolizes the union of two souls embarking on a lifelong journey of love and commitment. Surrounded by the enchanting ambiance, the couple exchanges heartfelt vows, promising to support and cherish each other through thick and thin.
+            </p>
+
+            <div class="event-info">
+                <div class="event-content-footer">
+                    <div class="publish-date">
+                        14 November - 27 November 2022
+                    </div>
+                    <div class="btn-about-us event">
+                        <button type="button">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="event-card artistic">
+        <div class="img-box">
+            <img src="Asset/poster4.jpg" alt="" class="event-banner">
+        </div>
+
+        <div class="event-content">
+            <a href="">
+                <h3 class="event-title">Indonesia Comic Con 2023</h3>
+            </a>
+            <p class="event-text">
+                "Indonesia Comic Con 2023" is an exhilarating event that brings together comic book enthusiasts, pop culture lovers, and fans from all walks of life. This vibrant convention celebrates the captivating world of comics, animation, gaming, and all things geeky. Attendees can expect thrilling cosplay, engaging panel discussions with industry professionals, exciting merchandise booths, and opportunities to meet their favorite artists and creators.
+            </p>
+
+            <div class="event-info">
+                <div class="event-content-footer">
+                    <div class="publish-date">
+                        01 October - 02 October 2022
+                    </div>
+                    <div class="btn-about-us event">
+                        <button type="button">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+
+<footer class="footer">
+    <div class="footer-left">
+        <div class="footer-left-flex">
+            <img src="Asset/jockey.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatum et in minima iure ad provident perspiciatis velit? Similique voluptate quibusdam illum harum ipsum fuga quas odio architecto asperiores nemo.</p>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+    </div>
+    <ul class="footer-right">
+        <li class="feature">
+            <h2>Quick Links</h2>
+
+            <ul class="quicklink">
+                <li><a href="about_us.html">About</a></li>
+                <li><a href="priceList2.html">Packages</a></li>
+                <li><a href="eventList.html">Events</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+            </ul>
+        </li>
+
+        <li class="feature">
+            <h2>Address</h2>
+
+            <ul class="quicklink">
+                <li><a href="#">Jakarta Barat</a></li>
+                <li><a href="#">27A, Kecamatan BatuBara</a></li>
+                <li><a href="#">Indonesia</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="footer-bottom">
+        <p>All Right Reserved | Jockey Conference Center</p>
+    </div>
+</footer>
+</div>
+
+    <script src="eventList.js"></script>
+</section>
+</body>
+</html>
